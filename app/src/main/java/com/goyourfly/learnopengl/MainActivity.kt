@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val glSurfaceView = findViewById(R.id.surface) as GLSurfaceView
 
         glSurfaceView.setEGLContextClientVersion(2)
-        glSurfaceView.setRenderer(RendererHelloTriangle())
+        glSurfaceView.setRenderer(BaseRenderer())
         glSurfaceView.renderMode = GLSurfaceView.RENDERMODE_WHEN_DIRTY
     }
 }
